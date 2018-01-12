@@ -3,20 +3,32 @@ body {
 	background-color: white;
 }
 
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	width: 300px;
+}
+
 label {
-	padding: 5px;
+	padding: 10px;
 }
 
 select {
-	width: 400px;
+	width: 450px;
 	font-size: 14px;
 	padding: 5px;
 }
 
+.jumbotron {
+	border-top: 7px solid #00B3BD;
+}
+
 form {
-	border: 10px solid white;
+	border-top: 7px solid #00B3BD;
 	padding: 10px;
-	background-color: lightgrey;
+	background-color: #e9ecef;
 }
 
 button {

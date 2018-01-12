@@ -10,11 +10,11 @@ var cssVal = 0;
 var csharpVal = 0;
 
 var introPossible = 5;
-var rubyPossible = 5;
-var phpPossible = 5;
-var javaPossible = 5;
-var cssPossible = 5;
-var csharpPossible = 5;
+var rubyPossible = 8;
+var phpPossible = 8;
+var javaPossible = 8;
+var cssPossible = 8;
+var csharpPossible = 8;
 
 $(document).ready(function() {
   $("form#trackSurvey").submit(function(event) {
@@ -26,6 +26,7 @@ $(document).ready(function() {
 		var comfort = $("#computerComfort").val();
 		var codeInterest = $("#codeInterest").val();
 		var companySize = $("#companySize").val();
+		var clientType = $("#clientType").val();
 
 		$("h4").prepend(name + ", ");
 
@@ -36,7 +37,7 @@ $(document).ready(function() {
 		if (comfort === "uncomfortable") {
 			introVal += 5;
 		} else if (comfort === "lowComfort") {
-			introVal += 2;
+			introVal += 1;
 		} else if (comfort === "highComfort") {
 			introVal -= 1;
 		}
@@ -50,7 +51,7 @@ $(document).ready(function() {
 		} else if (codeInterest === "intDesign") {
 			cssVal += 5;
 		} else if (codeInterest === "intBackend") {
-			phpVal += 4;
+			phpVal += 3;
 			csharpVal += 1;
 			cssVal -= 1;
 		} else if (codeInterest === "intBtoB") {
@@ -67,8 +68,26 @@ $(document).ready(function() {
 			phpVal +=1;
 		} else if (companySize === "lgCompany") {
 			csharpVal +=2;
-			phpVal +=1;
+			phpVal +=2;
 			javaVal +=2;
+		}
+
+		if (clientType === "clientReddit") {
+			rubyVal +=3;
+			javaVal +=1;
+		} else if (clientType === "clientGovt") {
+			phpVal +=3;
+			csharpVal +=2
+		} else if (clientType === "clientCorp") {
+			csharpVal +=3
+			phpVal += 2
+			javaVal +=1
+		} else if (clientType === "clientFashion") {
+			cssVal += 3;
+			javaVal +=1;
+		} else if (clientType === "clientMobile") {
+			javaVal +=3;
+			rubyVal +=1;
 		}
 
 		var introPercent = percentFit(introVal, introPossible);
@@ -78,7 +97,15 @@ $(document).ready(function() {
 		var cssPercent = percentFit(cssVal, cssPossible);
 		var csharpPercent = percentFit(csharpVal, csharpPossible);
 
-		if (introPercent > rubyPercent && introPercent > javaPercent && introPercent > phpPercent && introPercent > cssPercent && introPercent > csharpPercent) {
+		// Troubleshooting:
+		// alert(introPercent);
+		// alert(rubyPercent);
+		// alert(javaPercent);
+		// alert(phpPercent);
+		// alert(cssPercent);
+		// alert(csharpPercent);
+
+		if (introPercent > rubyPercent && introPercent > javaPercent && introPercent > phpPercent && introPercent > cssPercent && introPercent > csharpPercent || introPercent === 100) {
 			$(".trackPercent").text(introPercent + "%");
 			$("#introTrack").fadeIn();
 		}	else if (rubyPercent > introPercent && rubyPercent > javaPercent && rubyPercent > phpPercent && rubyPercent > cssPercent && rubyPercent > csharpPercent) {
@@ -97,7 +124,7 @@ $(document).ready(function() {
 			$(".trackPercent").text(csharpPercent + "%");
 			$("#csharpTrack").fadeIn();
 		} else {
-			alert("Sorry, it looks like something went wrong. Please reload the page and try again.")
+			alert("Unfortunately, we weren't able to place you decisively with one track over another. Feel free to give the survey another try if you'd like. Our apologies.")
 		}
 		event.preventDefault();
 	});

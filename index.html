@@ -8,13 +8,14 @@
   </head>
   <body>
     <div class="container">
+			<img src="https://karenfreemansmith.github.io/Epic-IntroWk2-TrackSuggester/img/logo.png" alt="Epicodus Logo">
 			<div class="jumbotron">
-				<h1>Welcome to the Epicodus Track Selector!</h1>
-				<p>Please complete the questions below to the best of your ability and we will do our best to set you on the right path for your programming carreer.</p>
+				<h1>Welcome to Epicodus!</h1>
+				<h5>Please complete the questions below to the best of your ability. A clever algorith, made by one of Epicodus' own students, will tell you which programming track suits you best.</h5>
 			</div>
 			<form id="trackSurvey">
 				<label for="name"><strong>Name</strong></label>
-				<input id="name" type="text"><br>
+				<input id="name" type="text">
 				<label for="email"><strong>Email</strong></label>
 				<input id="email" type="email"><br>
 				<label for="education">What level of education have you pursued to date?</label><br>
@@ -33,19 +34,27 @@
 				</select><br>
 				<label for="codeInterest">What kinds of software are you interested in?</label><br>
 				<select id="codeInterest">
-					<option value="intMobile">I'm interested mobile and tablet applications</option>
+					<option value="intMobile">I'm interested in mobile and tablet applications</option>
 					<option value="intInteractive">I'm interested in interactive, user-focused websites</option>
 					<option value="intDesign">I'm interested in beautiful websites that are easy to use </option>
 					<option value="intBackend">I'm interested in the functionality that goes on behind the scenes</option>
 					<option value="intBtoB">I'm interested in business-to-business web pages</option>
 				</select><br>
-				<label for="codeInterest">What kind of company would you like to work at?</label><br>
+				<label for="codeInterest">What size of company would you like to work at?</label><br>
 				<select id="companySize">
 					<option value="smStartup">A very small, fast-paced startup (<15 employees)</option>
 					<option value="mdStartup">A growing startup (15-50 employees)</option>
 					<option value="smCompany">A stable small business(50-100 employees)</option>
 					<option value="mdCompany">A large, established company (100-1,000 employees)</option>
 					<option value="lgCompany">An enterprise company (1,000+ employees)</option>
+				</select><br>
+				<label for="clientType">Which of the following would be an ideal client?</label><br>
+				<select id="clientType">
+					<option value="clientReddit">A young company trying to build a reddit-esqe application</option>
+					<option value="clientGovt">A government branch trying to build a group of secure websites</option>
+					<option value="clientCorp">A large corporation trying to build a web marketplace</option>
+					<option value="clientFashion">A mid-size fashion company trying to redesign their homepage</option>
+					<option value="clientMobile">An individual trying to build a unique and innovative mobile application</option>
 				</select><br>
 				<button type="submit" class="btn">Show me my programming track!</button>
 			</form>
@@ -62,7 +71,7 @@
 			<div id="phpTrack" class="trackOption">
 				<h1>The results are in: you are a <span class="trackPercent"></span> fit for the PHP/Drupal track.</h1>
 				<h4>the PHP/Drupal track is a great fit for you.</h4>
-				<p>PHP and Drupal are used in large, content-heavy websites that often generate dynamic content and employ state-of-the-art security protocols. PHP is the predominant language of backend functionality, with over 80% of websites using it. Some prominent examples of its use are <a href="http://whitehouse.gov">whitehouse.gov</a> and <a href=http://sony.com.>Sony.com</a>.</p>
+				<p>PHP and Drupal are used in large, content-heavy websites that often generate dynamic content and employ state-of-the-art security protocols. PHP is the predominant language of backend functionality, with over 80% of websites using it. Some prominent examples of its use are <a href="http://whitehouse.gov">whitehouse.gov</a> and <a href=http://sony.com.>sony.com</a>.</p>
 			</div>
 			<div id="javaTrack" class="trackOption">
 				<h1>The results are in: you are a <span class="trackPercent"></span> fit for the Java/Android track.</h1>
