@@ -78,12 +78,21 @@ $(document).ready(function() {
 		var cssPercent = percentFit(cssVal, cssPossible);
 		var csharpPercent = percentFit(csharpVal, csharpPossible);
 
-		alert(javaPercent);
-		alert(rubyPercent);
-		alert(phpPercent);
-		alert(cssPercent);
-		alert(csharpPercent);
-		alert(introPercent);
+		if (introPercent > rubyPercent && introPercent > javaPercent && introPercent > phpPercent && introPercent > cssPercent && introPercent > csharpPercent) {
+			$("#introTrack").fadeIn();
+		}	else if (rubyPercent > introPercent && rubyPercent > javaPercent && rubyPercent > phpPercent && rubyPercent > cssPercent && rubyPercent > csharpPercent) {
+			$("#rubyTrack").fadeIn();
+		} else if (javaPercent > introPercent && javaPercent > rubyPercent && javaPercent > phpPercent && javaPercent > cssPercent && javaPercent > csharpPercent) {
+			$("#javaTrack").fadeIn();
+		} else if (phpPercent > introPercent && phpPercent > rubyPercent && phpPercent > javaPercent && phpPercent > cssPercent && phpPercent > csharpPercent) {
+			$("#phpTrack").fadeIn();
+		} else if (cssPercent > introPercent && cssPercent > rubyPercent && cssPercent > javaPercent && cssPercent > phpPercent && cssPercent > csharpPercent) {
+			$("#cssTrack").fadeIn();
+		} else if (csharpPercent > introPercent && csharpPercent > rubyPercent && csharpPercent > javaPercent && csharpPercent > phpPercent && csharpPercent > cssPercent) {
+			$("#csharpTrack").fadeIn();
+		} else {
+			alert("Sorry, it looks like something went wrong. Please reload the page and try again.")
+		}
 		event.preventDefault();
 		// if (comfort === "uncomfortable" || comfort === "lowComfort") {
 		// 	$("#introTrack").fadeIn();
