@@ -9,3 +9,11 @@ select {
 .trackOption {
 	display: none;
 }
+
+.trackOption h1 {
+}
+
+.trackPercent {
+	font-weight: bold;
+	color: red;
+}

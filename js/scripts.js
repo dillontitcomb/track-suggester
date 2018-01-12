@@ -79,16 +79,22 @@ $(document).ready(function() {
 		var csharpPercent = percentFit(csharpVal, csharpPossible);
 
 		if (introPercent > rubyPercent && introPercent > javaPercent && introPercent > phpPercent && introPercent > cssPercent && introPercent > csharpPercent) {
+			$(".trackPercent").text(introPercent + "%");
 			$("#introTrack").fadeIn();
 		}	else if (rubyPercent > introPercent && rubyPercent > javaPercent && rubyPercent > phpPercent && rubyPercent > cssPercent && rubyPercent > csharpPercent) {
+			$(".trackPercent").text(rubyPercent + "%");
 			$("#rubyTrack").fadeIn();
 		} else if (javaPercent > introPercent && javaPercent > rubyPercent && javaPercent > phpPercent && javaPercent > cssPercent && javaPercent > csharpPercent) {
+			$(".trackPercent").text(javaPercent + "%");
 			$("#javaTrack").fadeIn();
 		} else if (phpPercent > introPercent && phpPercent > rubyPercent && phpPercent > javaPercent && phpPercent > cssPercent && phpPercent > csharpPercent) {
+			$(".trackPercent").text(phpPercent + "%");
 			$("#phpTrack").fadeIn();
 		} else if (cssPercent > introPercent && cssPercent > rubyPercent && cssPercent > javaPercent && cssPercent > phpPercent && cssPercent > csharpPercent) {
+			$(".trackPercent").text(cssPercent + "%");
 			$("#cssTrack").fadeIn();
 		} else if (csharpPercent > introPercent && csharpPercent > rubyPercent && csharpPercent > javaPercent && csharpPercent > phpPercent && csharpPercent > cssPercent) {
+			$(".trackPercent").text(csharpPercent + "%");
 			$("#csharpTrack").fadeIn();
 		} else {
 			alert("Sorry, it looks like something went wrong. Please reload the page and try again.")
