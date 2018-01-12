@@ -5,3 +5,7 @@ label {
 select {
 	padding: 5px;
 }
+
+.rubyTrack {
+	display: none;
+}
