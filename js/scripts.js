@@ -3,8 +3,6 @@ var percentFit = function (trackScore, trackPossibleScore) {
 	return trackPercent
 }
 
-
-
 $(document).ready(function() {
   $("form#trackSurvey").submit(function(event) {
 		$("form#trackSurvey").hide();
@@ -15,6 +13,7 @@ $(document).ready(function() {
 		var comfort = $("#computerComfort").val();
 		var codeInterest = $("#codeInterest").val();
 		var companySize = $("#companySize").val();
+		$("h4").prepend(name + ", ");
 
 		if (comfort === "uncomfortable" || comfort === "lowComfort") {
 			$("#introTrack").fadeIn();
