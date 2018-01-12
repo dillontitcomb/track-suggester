@@ -6,8 +6,11 @@ $(document).ready(function() {
 		var comfort = $("#computerComfort").val();
 		var codeInterest = $("#codeInterest").val();
 		var companySize = $("#companySize").val();
-		alert(name + email + education + comfort + codeInterest + companySize);
-		$(".rubyTrack").show();
+		$("#rubyTrack").show();
+		$("#phpTrack").show();
+		$("#javaTrack").show();
+		$("#cssTrack").show();
+		$("#csharpTrack").show();
 		event.preventDefault();
 	});
 });
