@@ -1,9 +1,26 @@
+body {
+	font-family: helvetica;
+	background-color: white;
+}
+
 label {
 	padding: 5px;
 }
 
 select {
+	width: 400px;
+	font-size: 14px;
 	padding: 5px;
+}
+
+form {
+	border: 10px solid white;
+	padding: 10px;
+	background-color: lightgrey;
+}
+
+button {
+	margin-top: 15px;
 }
 
 .trackOption {

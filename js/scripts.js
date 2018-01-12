@@ -100,27 +100,5 @@ $(document).ready(function() {
 			alert("Sorry, it looks like something went wrong. Please reload the page and try again.")
 		}
 		event.preventDefault();
-		// if (comfort === "uncomfortable" || comfort === "lowComfort") {
-		// 	$("#introTrack").fadeIn();
-		// }	else if (codeInterest === "intMobile") {
-		// 	$("#javaTrack").fadeIn();
-		// }	else if (codeInterest === "intDesign") {
-		// 	$("#cssTrack").fadeIn();
-		// }	else if (codeInterest === "intBackend") {
-		// 	$("#phpTrack").fadeIn();
-		// }	else if (codeInterest === "intBtoB") {
-		// 	$("#csharpTrack").fadeIn();
-		// } else if (companySize === "smStartup" || companySize === "mdStartup" || codeInterest === "intInteractive") {
-		// 	$("#rubyTrack").fadeIn();
-		// } else {
-		// 	alert("Sorry! We're not exactly sure which track you should take.")
-		// }
-
-		// $("#rubyTrack").show();
-		// $("#phpTrack").show();
-		// $("#javaTrack").show();
-		// $("#cssTrack").show();
-		// $("#csharpTrack").show();
-
 	});
 });
