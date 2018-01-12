@@ -10,6 +10,7 @@ Ruby/Rails:
 - For interactive (account-focused) web applications
 - Small companies
 - Twitch, Airbnb, Soundcloud, Basecamp, Hulu
+- Build quickly
 
 PHP/Drupal:
 - Content-heavy websites
@@ -19,6 +20,7 @@ PHP/Drupal:
 - Whitehouse.gov and Sony.com
 
 Java/Android:
+- Enterprise, high performance, high demand
 - Popular, can do anything
 - Mobile focused, touchscreen enabled
 - Nike
@@ -30,6 +32,7 @@ CSS/Design:
 
 C#/.NET:
 - Enterprise or government / companies serving enterprise
+- Business software
 - Windows-focused web applications
 - Used on Windows
 
@@ -40,3 +43,5 @@ C#/.NET:
 3. Preferred company size
 4. Preferred development goals (enterprise software, small company web app, mobile/tablet)
 5. Generality of work (is it applicable at any company?)
+6. Demand for skillset
+7. Backend or Frontend?

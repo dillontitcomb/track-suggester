@@ -12,6 +12,43 @@
 				<h1>Welcome to the Epicodus Track Selector!</h1>
 				<p>Please complete the questions below to the best of your ability and we will do our best to set you on the right path for your programming carreer.</p>
 			</div>
+			<form id="trackSurvey">
+				<label for="name">Name</label>
+				<input id="name" type="text">
+				<label for="email">Email</label>
+				<input id="email" type="email"><br>
+				<label>Let's start with some information about your background:</label><br>
+				<label for="education">What level of education have you pursued to date?</label><br>
+				<select id="education">
+					<option value="none">I did not graduate from high school</option>
+					<option value="highSchool">I graduated from high school</option>
+					<option value="college">I graduated from college</option>
+					<option value="graduate">I have a postgraduate degree</option>
+				</select>
+				<label for="computerComfort">How comfortable do you feel with computers and technology?</label><br>
+				<select id="computerComfort">
+					<option value="uncomfortable">I have very little experience using computers</option>
+					<option value="lowComfort">I use computers often but don't feel particularly comfortable with them</option>
+					<option value="medComfort">I feel moderately comfortable using computers</option>
+					<option value="highComfort">I have significant experience using computers</option>
+				</select>
+				<label for="codeInterest">What kinds of software are you interested in?</label><br>
+				<select id="codeInterest">
+					<option value="intMobile">I'm interested mobile and tablet applications</option>
+					<option value="intInteractive">I'm interested in interactive, user-focused websites</option>
+					<option value="intDesign">I'm interested in beautiful websites that are easy to use </option>
+					<option value="intBackend">I'm interested in the functionality that goes on behind the scenes</option>
+					<option value="intBtoB">I'm interested in business-to-business web pages</option>
+				</select>
+				<label for="codeInterest">What kind of company would you like to work at?</label><br>
+				<select id="companySize">
+					<option value="smStartup">A very small, fast-paced startup (<15 employees)</option>
+					<option value="mdStartup">A growing startup (15-50 employees)</option>
+					<option value="smCompany">A stable small business(50-100 employees)</option>
+					<option value="mdCompany">A large, established company (100-1,000 employees)</option>
+					<option value="lgCompany">An enterprise company (1,000+ employees)</option>
+				</select>
+			</form>
     </div>
   </body>
 </html>
