@@ -32,7 +32,7 @@ _Please contact me at dillontitcomb@gmail.com with inquiries._
 
 ## Link to page
 
-https://github.com/dillontitcomb/track-suggester
+https://dillontitcomb.github.io/track-suggester/
 
 ### License
 
