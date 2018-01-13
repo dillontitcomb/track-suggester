@@ -6,7 +6,7 @@
 
 ## Description
 
-_This web page provides visitors with an idea of which programming track at Epicodus might suit their circumstances. Based on a few simple questions, the page calculates the percent-fit of the visitor to a given programming track._
+_This web page provides visitors with an idea of which programming track at Epicodus might suit their interests. Based on a few simple questions, the page calculates the percent-fit of the visitor to a given programming track._
 
 ## Setup/Installation Requirements
 
@@ -16,9 +16,7 @@ _This web page provides visitors with an idea of which programming track at Epic
 
 ## Known Bugs
 
-_There is not currently any good solution to two tracks having the same percentage fit. However, more questions and a subsequent growth in score variety will reduce the likelihood of a tie._
-
-_There aren't currently enough questions for the percentage outputs between 100% and 0% to be particularly interesting. However, the more questions asked, the more meaningful the percentage calculation will get._
+_No known bugs. The only weak point is the event in which two tracks have the same percentage score. In this case, an alert is triggered, but in a future iteration this problem should be solved by showing both potential tracks or asking a follow-up question to settle the tie._
 
 ## Support and contact details
 
