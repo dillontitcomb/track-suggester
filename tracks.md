@@ -36,7 +36,6 @@ C#/.NET:
 - Windows-focused web applications
 - Used on Windows
 
-
 <!-- POTENTIAL QUESTIONS -->
 1. Experience with code
 2. Comfort with computers

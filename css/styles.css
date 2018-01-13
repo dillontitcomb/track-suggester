@@ -1,5 +1,4 @@
 body {
-	font-family: helvetica;
 	background-color: white;
 }
 
@@ -16,13 +15,9 @@ label {
 }
 
 select {
-	width: 450px;
+	width: 400px;
 	font-size: 14px;
 	padding: 5px;
-}
-
-.jumbotron {
-	border-top: 7px solid #00B3BD;
 }
 
 form {
@@ -32,17 +27,46 @@ form {
 }
 
 button {
+	color: white;
+	background-color: #00B3BD;
 	margin-top: 15px;
+}
+
+.jumbotron {
+	border-top: 7px solid #00B3BD;
 }
 
 .trackOption {
 	display: none;
+	background-color: #e9ecef;
+	border-top: 7px solid #00B3BD;
+	padding: 10px;
 }
 
 .trackOption h1 {
+	padding: 10px;
+}
+
+.trackOption h4 {
+	padding: 10px;
+}
+
+.trackOption p {
+	padding: 10px;
 }
 
 .trackPercent {
 	font-weight: bold;
 	color: red;
+}
+
+.clickable {
+	font-size: 12px;
+	text-align: center;
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.clickable:hover {
+  text-decoration: underline;
 }
