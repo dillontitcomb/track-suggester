@@ -16,7 +16,7 @@ _This web page provides visitors with an idea of which programming track at Epic
 
 ## Known Bugs
 
-_There is not currently any good solution to two tracks having the same percentage fit. However, more questions and a subsequent growth in score variety will reduce the likelihood of a tie. 
+_There is not currently any good solution to two tracks having the same percentage fit. However, more questions and a subsequent growth in score variety will reduce the likelihood of a tie._
 
 _There aren't currently enough questions for the percentage outputs between 100% and 0% to be particularly interesting. However, the more questions asked, the more meaningful the percentage calculation will get._
 
